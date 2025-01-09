@@ -1,0 +1,15 @@
+/* Corrected CSS using explicit units and parenthesis */
+.element {
+  width: calc(100% - 50px);
+  /* Correct: Subtraction of pixels from percentage */
+  height: calc((100px + 50%) / 2);
+  /* Correct: Explicit parenthesis and consistent units within the expression */
+}
+
+.anotherElement {
+  margin: calc(100px - 20%); /*Correct: Percentage subtracted from pixel values*/
+}
+
+.nestedCalc {
+  width: calc(calc(50% - 10px) * 2); /*Correct: Nested `calc` with proper parenthesis and consistent units*/
+} 
